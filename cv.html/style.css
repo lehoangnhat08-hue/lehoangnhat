@@ -1,0 +1,58 @@
+body
+{
+  background-image: url('bgcv.jpg') ;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.left
+{
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+.right
+{
+  background-color: white;
+  padding: 20px;
+}
+@media (min-width: 768px)
+{
+  .row
+  {
+    background-color: #333333;
+  }
+  .left
+  {
+    width: 40%;
+    padding-right: 70px;
+  }
+  .right
+  {
+    width: calc(60% + 50px);
+    margin-left: -50px;
+    border-radius: 80px 0 0 80px ;
+    padding-left: 60px;
+  }
+     
+  
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+  background-color: #888;
+}
+h4 {
+  margin-top: 20px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+.job {
+  color: gray;
+}

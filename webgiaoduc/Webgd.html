@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THPT Diệp Minh Châu - Trang web Giáo dục</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <a href="#" class="login-btn" id="loginBtn">Đăng nhập</a>
+    <div id="userMenu">
+        <p id="logoutBtn">Đăng xuất</p>
+    </div>
+    <div class="popup-overlay" id="loginPopup">
+        <div class="popup" id="loginForm">
+            <h2>Đăng nhập</h2>
+            <input id="loginEmail" type="email" placeholder="Email" required>
+            <input id="loginPass" type="password" placeholder="Mật khẩu" required>
+            <button type="button" id="btnSubmitLogin">Đăng nhập</button>
+            <p>Bạn chưa có tài khoản? <a href="#" id="linkToSignup">Đăng ký</a></p>
+        </div>
+
+        <div class="popup" id="signupForm" style="display:none;">
+            <h2>Đăng ký</h2>
+            <select id="signupRole">
+                <option value="student">Học sinh</option>
+                <option value="teacher">Giáo viên</option>
+            </select>
+            <input id="signupName" type="text" placeholder="Họ tên" required>
+            <input id="signupEmail" type="email" placeholder="Email" required>
+            <input id="signupPass" type="password" placeholder="Mật khẩu" required>
+            <button type="button" id="btnSubmitSignup">Đăng ký</button>
+            <p>Đã có tài khoản? <a href="#" id="linkToLogin">Đăng nhập</a></p>
+        </div>
+    </div>
+    <header id="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid justify-content-center">
+                <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link" data-target="home">Trang chủ</a></li>
+                        <li><a class="nav-link" data-target="gioithieu">Giới thiệu</a></li>
+                        <li><a class="nav-link" data-target="tailieu">Tài liệu</a></li>
+                        <li><a class="nav-link" data-target="bangdiem">Bảng Điểm</a></li>
+                        <li><a class="nav-link" data-target="tuyensinh">Tuyển sinh</a></li>
+                        <li><a class="nav-link" data-target="hoidap">Hỏi đáp</a></li>
+                        <li><a class="nav-link" data-target="lienhe">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="home" class="trangchu-bg">
+        <div class="hero-box">
+            <h1>Chào mừng đến với Trường THPT Diệp Minh Châu</h1>
+            <p>Nơi ươm mầm tri thức, chắp cánh ước mơ cho thế hệ trẻ.</p>
+            <button type="button" class="cta-button" id="btnHeroTuyenSinh">
+                Xem Thông tin Tuyển sinh
+            </button>
+        </div>
+    </main>
+    <div id="gioithieu" class="content-section gioithieu-bg">
+        <div class="section-title">
+            <h2>🏫 Giới Thiệu Trường</h2>
+            <p><b>Thông tin chung và lịch sử hình thành</b></p>
+        </div>
+
+        <div class="content-box">
+            <h3>📜 Lịch sử hình thành và phát triển:</h3>
+            <p>
+                Trường THPT Diệp Minh Châu có lịch sử lâu dài với nhiều giai đoạn phát triển và tên gọi khác nhau, thể hiện sự nỗ lực không ngừng trong công tác giáo dục tại địa phương.
+            </p>
+            <p>
+                <b>I. Tên gọi của trường:</b><br>
+                - Từ năm 1975 đến 1976: Trường cấp 3B Châu Thành <br>
+                - Từ năm 1976 đến 1977: Trường Tam Dương B<br>
+                - Từ năm 1977 đến 1979: Trường cấp 3 Châu Thành B<br>
+                - Từ năm 1979 đến 2010: Trường THPT Châu Thành B<br>
+                - <b>Từ năm 2011 đến nay: Trường THPT Diệp Minh Châu</b>
+            </p>
+            <p>
+                <b>II. Ban lãnh đạo qua các thời kỳ:</b><br>
+                Cơ cấu Ban lãnh đạo đã có sự thay đổi từ Ban Giám đốc (trước 1975) đến Ban điều hành và cuối cùng là Ban Giám hiệu, với các vị Hiệu trưởng, Phó Hiệu trưởng qua từng năm học...<br>
+                <small>(Chi tiết danh sách các vị Hiệu trưởng được liệt kê bên dưới)</small>
+            </p>
+            <p>
+                1.- Từ năm học 1970 đến 1973: Hiệu trưởng: Thầy Trần Mỹ Châu<br>
+                2.- Từ năm 1974 đến 30/4/1975: Hiệu trưởng: Thầy Võ Hoàng Mai<br>
+                3.- Từ 01/5/1975, Ban điều hành gồm: Trưởng ban: Thầy Võ Sơ, Phó ban: Thầy Phan Văn Thành, Thầy Trần Song Nguyên<br>
+                4.- Từ năm 1976 đến 1979: Hiệu trưởng: Thầy Nguyễn Văn Hưởng<br>
+                5.- Từ năm 1979 đến 1980: Hiệu trưởng: Thầy Lê Văn Hoàng, Phó Hiệu trưởng: Cô Chung Xuân Mai<br>
+                6.- Từ năm 1980 đến năm 1981: Hiệu trưởng: Thầy Hà Văn Chiến<br>
+                7.- Từ năm 1981 đến 1987: Hiệu trưởng: Thầy Mai Ngọc Linh, Phó Hiệu trưởng: Cô Đặng Thị Hồng Ngân<br>
+                8.- Từ năm 1987 đến 1996: Hiệu trưởng: Thầy Bùi Văn Năm, Phó Hiệu trưởng: Thầy Nguyễn Đình Thường, Thầy Nguyễn Văn Hùng<br>
+                9.- Từ năm 1996 đến 2006: Hiệu trưởng: Thầy Nguyễn Đình Thường, Phó Hiệu trưởng: Thầy Nguyễn Thành Phi, Thầy Nguyễn Văn Hân (Từ 2003)<br>
+                10.- Từ năm 2006 đến 2016: Hiệu trưởng: Thầy Đặng Văn Hải, Phó Hiệu trưởng: Thầy Nguyễn Thành Phi, Thầy Nguyễn Văn Hân, Cô Lê Thị Thắm (Từ 2009)<br>
+                11.- Từ năm 2016 đến 2/2018: Hiệu trưởng: Thầy Nguyễn Văn Hân, Phó Hiệu trưởng: Thầy Đặng Văn Hải, Cô Lê Thị Thắm<br>
+                12. - Từ 1/4/2018 đến nay: Hiệu trưởng: Thầy Nguyễn Văn Hân, Phó Hiệu trưởng: Cô Lê Thị Thắm, Thầy Trương Phương Thịnh<br>
+            </p>
+        </div>
+    </div>
+    <div id="tailieu" class="content-section tailieu-bg">
+        <div class="section-title">
+            <h2>Thư viện Tài liệu Học tập 📚</h2>
+        </div>
+
+        <div class="content-box">
+            <p>Cung cấp tài liệu học tập, giáo trình, đề thi mẫu miễn phí cho học sinh và giáo viên.</p>
+            <ul>
+                <li><b>Tài liệu Khối 12:</b> Đề thi THPT Quốc gia các năm, chuyên đề ôn tập.</li>
+                <li><b>Giáo trình điện tử:</b> Sách giáo khoa và sách tham khảo.</li>
+                <li><b>Ngân hàng đề thi:</b> Các môn Toán, Lý, Hóa, Văn, Anh.</li>
+                <li><b>Video bài giảng:</b> Bài giảng chuyên sâu của giáo viên trường.</li>
+            </ul>
+            <a href="https://thuvienhoclieu.com/" target="_blank">
+                <button type="button" class="cta-button" style="background-color: #28a745; color: white;">
+                    Truy cập Thư viện
+                </button>
+            </a>
+        </div>
+    </div>
+    <div id="bangdiem" class="content-section bangdiem-bg">
+        <div class="section-title">
+            <h2>Bảng điểm 📊</h2>
+        </div>
+
+        <div class="content-box">
+            <div id="guestBox" style="text-align:center; font-weight:bold; color:#d9534f;">
+                Vui lòng Đăng nhập bằng tài khoản Giáo viên hoặc Học sinh để xem/nhập bảng điểm!
+            </div>
+            <div id="teacherBox" style="display:none;">
+                <input id="studentNameSave" type="text" placeholder="Nhập tên học sinh">
+                <br><br>
+                <h3>Nhập điểm (Giáo viên)</h3>
+                <button type="button" id="btnSwitchHK" class="btn-hk">
+                    👉 Chuyển sang Học kỳ II
+                </button>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Môn</th><th>TX</th><th>TX</th><th>TX</th><th>GK</th><th>CK</th><th>TBM</th>
+                            </tr>
+                        </thead>
+                        <tbody id="teacherTableBody"></tbody>
+                    </table>
+                </div>
+                <br>
+                <button type="button" id="btnLuuDiem" class="cta-button">Tính & Lưu bảng điểm</button>
+            </div>
+            <div id="studentBox" style="display:none;">
+                <h3 id="studentTitleHK">Bảng điểm của em (Học kỳ I)</h3>
+                <button type="button" id="btnStudentSwitchHK" class="btn-hk">
+                    👉 Xem Học kỳ II
+                </button>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Môn</th><th>TX</th><th>GK</th><th>CK</th><th>TBM</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tuyensinh" class="content-section tuyensinh-bg">
+        <div class="section-title">
+            <h2>Tuyển Sinh Các Khối 🔔</h2>
+        </div>
+
+        <div class="content-box">
+            <h3>THÔNG BÁO THỐNG KÊ ĐĂNG KÝ DỰ THI, QUY TRÌNH THAY ĐỔI NV 1 TS10 THPT DMC</h3>
+            <p>QUY TRÌNH THAY ĐỔI NV, CHỈ TIÊU TS 10, SỐ LƯỢNG ĐK DỰ THI TS 10</p>
+            <ul>
+                <li><b>Kế hoạch Tuyển sinh Lớp 10:</b> Chỉ tiêu, phương thức xét tuyển, lịch nộp hồ sơ.</li>
+                <ul>
+                    <li>Chỉ tiêu: 210; Số lượng NV1 đã đăng ký tính đến ngày 19/5: 201; So với chỉ tiêu là -9. Số tuyển thẳng: 0; Số thí sinh thi trường chuyên đăng ký chuyển về NV1 (nếu không đỗ trường chuyên) là: 10</li>
+                </ul>
+                <li><b>Các Chương trình Đào tạo:</b> Lớp chuyên, lớp chọn, lớp cơ bản.</li>
+                <li><b>Hồ sơ cần thiết:</b> Đơn đăng ký, học bạ, giấy chứng nhận tốt nghiệp.</li>
+                <li><b>Lịch nộp hồ sơ:</b> Từ ngày 15/06 đến 30/06 hàng năm.</li>
+            </ul>
+            <a href="https://f.hoatieu.vn/data/image/2022/07/12/mau-don-du-tuyen-sinh-vao-lop-10-1.jpg" target="_blank">
+                <button type="button" class="cta-button" style="background-color: #ff0741; color: white;">
+                    Tải Đơn Đăng Ký
+                </button>
+            </a>
+        </div>
+    </div>
+    <div id="hoidap" class="content-section hoidap-bg">
+        <div class="section-title">
+            <h2>Hỏi Đáp Thường Gặp (FAQ) ❓</h2>
+        </div>
+        <div class="content-box">
+            <p>Giải đáp các thắc mắc phổ biến của phụ huynh và học sinh.</p>
+            <p>1️⃣ Học sinh làm thế nào để xem bảng điểm?<br>
+            👉 Học sinh truy cập mục Bảng điểm, chọn vai trò Học sinh, nhập đầy đủ thông tin được nhà trường cung cấp để tra cứu kết quả học tập theo từng học kỳ.</p>
+
+            <p>2️⃣ Phụ huynh có thể theo dõi kết quả học tập của con không?<br>
+            👉 Phụ huynh có thể sử dụng thông tin tài khoản của học sinh để xem điểm, nhận thông báo và theo dõi quá trình học tập trên website.</p>
+
+            <p>3️⃣ Khi nào nhà trường công bố thông tin tuyển sinh?<br>
+            👉 Thông tin tuyển sinh được cập nhật thường xuyên tại mục Tuyển sinh trên website và thông báo trực tiếp tại trường theo kế hoạch của Sở Giáo dục & Đào tạo.</p>
+
+            <p>4️⃣ Làm sao để tải tài liệu học tập?<br>
+            👉 Học sinh vào mục Tài liệu, chọn môn học và tải các tài liệu do giáo viên cung cấp để phục vụ việc học tập và ôn luyện.</p>
+
+            <p>5️⃣ Nếu quên thông tin đăng nhập thì phải làm gì?<br>
+            👉 Trong trường hợp quên thông tin đăng nhập, học sinh hoặc phụ huynh vui lòng liên hệ giáo viên chủ nhiệm hoặc văn phòng nhà trường để được hỗ trợ.</p>
+
+            <p>6️⃣ Website có cập nhật thông báo mới thường xuyên không?<br>
+            👉 Website được cập nhật thường xuyên các thông báo về lịch học, lịch thi, hoạt động ngoại khóa và các sự kiện quan trọng của nhà trường.</p>
+
+            <p>📞 Vẫn chưa tìm được câu trả lời?<br>
+            👉 Vui lòng chuyển sang mục Liên hệ để gửi câu hỏi trực tiếp cho nhà trường. Chúng tôi sẽ phản hồi trong thời gian sớm nhất</p>
+        </div>
+    </div>
+    <div id="lienhe" class="content-section lienhe-bg">
+        <div class="section-title">
+            <h2>Liên Hệ Với Chúng Tôi 📞</h2>
+        </div>
+        <div class="content-box">
+            <p style="color: black;">Xin vui lòng liên hệ theo thông tin dưới đây để được hỗ trợ tốt nhất.</p>
+            <p style="color: black;"><b>Email:</b> lehoangnhat08@gmail.com</p>
+            <p style="color: black;"><b>Điện thoại:</b> 0342918990</p>
+            <p style="color: black;"><b>Địa chỉ:</b> Trường THPT Diệp Minh Châu, Tỉnh Vĩnh Long</p>
+            <p style="color: black;"><b>Giờ làm việc:</b> 7:30 - 17:00 (Thứ Hai đến Thứ Sáu)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Trường THPT Diệp Minh Châu. Thiết kế bởi Lê Hoàng Nhật</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

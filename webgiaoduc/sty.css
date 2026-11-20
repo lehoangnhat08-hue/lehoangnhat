@@ -1,0 +1,333 @@
+body {
+    background-image: url("https://thptdiepminhchau.bentre.edu.vn/documents/7730602/7740119/7730602_7740119_234451_11052018.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+    max-width: 900px;
+    margin: 40px auto 80px;
+    color: #000;
+    font-size: 1.05em;
+    line-height: 1.7;
+    overflow-x: auto;
+}
+
+.content-section h2 {
+    text-align: center;
+    color: #0d6efd;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+header {
+    background-color: #0d6efd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu li { margin: 0; }
+
+#menu a {
+    display: block;
+    padding: 15px 20px !important;
+    color: white !important;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#menu a:hover { background-color: #061e6d; }
+.login-btn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 1001;
+}
+
+.login-btn:hover {
+    background-color: #e0a800;
+    color: #000;
+    transform: scale(1.05);
+}
+
+#userMenu {
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    padding: 10px;
+    display: none;
+    z-index: 1100;
+}
+
+#userMenu p {
+    margin: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 350px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+.popup h2 { color: #0d6efd; margin-bottom: 20px; }
+
+.popup input, .popup select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.popup button {
+    width: 95%;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.popup button:hover { background-color: #0b5ed7; }
+
+.popup p { margin-top: 15px; font-size: 0.9em; }
+
+.popup a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.popup a:hover { text-decoration: underline; }
+main {
+    flex-grow: 1;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main h1 { font-size: 3em; margin-bottom: 10px; font-weight: bold; }
+main p { font-size: 1.2em; }
+
+.cta-button {
+    background-color: #ffc107;
+    color: #000;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover { background-color: #e0a800; }
+
+.hero-box {
+    background: rgba(0, 0, 0, 0.55);
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+footer {
+    background-color: #061e6d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: auto;
+}
+
+footer p { margin: 0; }
+.content-section {
+    position: static;
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: fadeSlide 0.4s ease;
+}
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-title {
+    text-align: center;
+    margin: 20px auto 40px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #f7c600;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: white;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 6px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+th {
+    background: #0d6efd;
+    color: white;
+    font-weight: bold;
+}
+
+table input[type="number"], #studentNameSave {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.btn-hk {
+    margin-bottom: 15px;
+    padding: 8px 18px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.trangchu-bg {
+    background-image: url("h1.jpg");
+}
+
+.gioithieu-bg {
+    background-image: url("h1.jpg");
+}
+
+.tailieu-bg {
+    background-image: url("h1.jpg");
+}
+
+.bangdiem-bg {
+    background-image: url("h1.jpg");
+}
+
+.tuyensinh-bg {
+    background-image: url("h1.jpg");
+}
+
+.hoidap-bg {
+    background-image: url("h1.jpg");
+}
+
+.lienhe-bg {
+    background-image: url("h1.jpg");
+}
+
+@media (max-width: 991.98px) {
+    .hero-box { margin: 50px auto 0; padding: 35px 25px; }
+    main h1 { font-size: 2.1em; }
+    .section-title h2 { font-size: 32px; }
+}
+
+@media (max-width: 575.98px) {
+    .login-btn { top: 8px; right: 12px; padding: 6px 14px; font-size: 14px; }
+    .content-section { padding: 30px 15px; }
+    .content-box { padding: 20px 15px; font-size: 0.95em; }
+    main h1 { font-size: 1.6em; }
+    table { min-width: 520px; font-size: 12px; }
+}

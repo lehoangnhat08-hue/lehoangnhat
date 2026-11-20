@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;            
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    margin: 0;
+    color: white;
+    z-index: 10;
+}
+.canh1 { background: linear-gradient(#87e0ff, #0a6cb0); }   
+.canh2 { background: linear-gradient(#ffcc70, #c850c0); }   
+.canh3 { background: linear-gradient(#0b1a4a, #02081f); }   
+.canh4 { background: linear-gradient(#0b7a75, #03293d); }   
+#nut {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+}
+#nut button {
+    padding: 10px 16px;
+    margin-left: 8px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #0a6cb0;
+    cursor: pointer;
+}
+#nut button:hover {
+    background: #ffd54f;
+}
+#content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#content div {
+    position: absolute;
+}
+#content img {
+    width: 100%;
+}
+#cat {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #e8c777;
+}
+#shark {
+    width: 200px;
+    left: 0%;
+    top: 60%;
+    animation-name: shark;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes shark {
+    0%   { left: 0%;  top: 60%; transform: scaleX(1); }
+    25%  { left: 40%; top: 40%; transform: scaleX(1); }
+    49%  { left: 80%; top: 60%; transform: scaleX(1); }
+    50%  { left: 80%; top: 60%; transform: scaleX(-1); }
+    75%  { left: 40%; top: 45%; transform: scaleX(-1); }
+    99%  { left: 0%;  top: 60%; transform: scaleX(-1); }
+    100% { left: 0%;  top: 60%; transform: scaleX(1); }
+}
+#goldfish {
+    width: 120px;
+    top: 35%;
+    animation-name: goldfish;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes goldfish {
+    0%   { left: 0%;  top: 35%; transform: scaleX(1); }
+    49%  { left: 80%; top: 45%; transform: scaleX(1); }
+    50%  { left: 80%; top: 45%; transform: scaleX(-1); }
+    99%  { left: 0%;  top: 35%; transform: scaleX(-1); }
+    100% { left: 0%;  top: 35%; transform: scaleX(1); }
+}
+#faint {
+    width: 200px;
+    top: 50%;
+    animation-name: faint;
+    animation-duration: 20s;
+    animation-delay: -8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes faint {
+    0%   { left: 0%;  top: 50%; transform: scaleX(1); }
+    49%  { left: 80%; top: 30%; transform: scaleX(1); }
+    50%  { left: 80%; top: 30%; transform: scaleX(-1); }
+    99%  { left: 0%;  top: 50%; transform: scaleX(-1); }
+    100% { left: 0%;  top: 50%; transform: scaleX(1); }
+}
+#turtle {
+    width: 150px;
+    top: 70%;
+    animation-name: turtle;
+    animation-duration: 30s;
+    animation-delay: -10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes turtle {
+    0%   { left: 0%;  top: 72%; transform: scaleX(1); }
+    49%  { left: 80%; top: 65%; transform: scaleX(1); }
+    50%  { left: 80%; top: 65%; transform: scaleX(-1); }
+    99%  { left: 0%;  top: 72%; transform: scaleX(-1); }
+    100% { left: 0%;  top: 72%; transform: scaleX(1); }
+}
+#diver1, #diver2, #diver3 {
+    width: 200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#diver1 {
+    animation-name: diver1;
+    animation-duration: 36s;
+}
+@keyframes diver1 {
+    0%   { left: 0%;  top: 10%; transform: scaleX(1); }
+    12%  { left: 20%; top: 50%; transform: scaleX(1); }
+    25%  { left: 40%; top: 10%; transform: scaleX(1); }
+    37%  { left: 60%; top: 50%; transform: scaleX(1); }
+    49%  { left: 80%; top: 10%; transform: scaleX(1); }
+    50%  { left: 80%; top: 10%; transform: scaleX(-1); }
+    75%  { left: 40%; top: 50%; transform: scaleX(-1); }
+    99%  { left: 0%;  top: 10%; transform: scaleX(-1); }
+    100% { left: 0%;  top: 10%; transform: scaleX(1); }
+}
+
+#diver2 {
+    animation-name: diver2;
+    animation-duration: 44s;
+    animation-delay: -15s;
+}
+@keyframes diver2 {
+    0%   { left: 0%;  top: 20%; transform: scaleX(1); }
+    25%  { left: 25%; top: 55%; transform: scaleX(1); }
+    49%  { left: 80%; top: 20%; transform: scaleX(1); }
+    50%  { left: 80%; top: 20%; transform: scaleX(-1); }
+    75%  { left: 40%; top: 55%; transform: scaleX(-1); }
+    99%  { left: 0%;  top: 20%; transform: scaleX(-1); }
+    100% { left: 0%;  top: 20%; transform: scaleX(1); }
+}
+
+#diver3 {
+    animation-name: diver3;
+    animation-duration: 52s;
+    animation-delay: -30s;
+}
+@keyframes diver3 {
+    0%   { left: 0%;  top: 5%;  transform: scaleX(1); }
+    30%  { left: 30%; top: 45%; transform: scaleX(1); }
+    49%  { left: 80%; top: 5%;  transform: scaleX(1); }
+    50%  { left: 80%; top: 5%;  transform: scaleX(-1); }
+    70%  { left: 50%; top: 45%; transform: scaleX(-1); }
+    99%  { left: 0%;  top: 5%;  transform: scaleX(-1); }
+    100% { left: 0%;  top: 5%;  transform: scaleX(1); }
+}
+body.tamdung * { animation-play-state: paused !important; }
+#content > div { cursor: pointer; }
+#content img {
+    filter: drop-shadow(0 8px 8px rgba(0,0,0,.28));
+    animation: lac 3s ease-in-out infinite alternate;
+}
+@keyframes lac {
+    from { transform: rotate(-3deg); }
+    to   { transform: rotate(3deg); }
+}
+body.canh3 #content img, body.canh4 #content img {
+    filter: brightness(.8) drop-shadow(0 0 10px rgba(120,200,255,.5));
+}
+#tiaNang {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1; pointer-events: none;
+    background: repeating-linear-gradient(105deg, rgba(255,255,255,.10) 0 40px, rgba(255,255,255,0) 40px 130px);
+    -webkit-mask-image: linear-gradient(#000, transparent 75%);
+            mask-image: linear-gradient(#000, transparent 75%);
+    animation: tiaMove 14s ease-in-out infinite alternate;
+}
+@keyframes tiaMove {
+    from { transform: translateX(-4%); opacity: .6; }
+    to   { transform: translateX(4%);  opacity: 1; }
+}
+.rong {
+    position: fixed; bottom: 40px; width: 18px; z-index: 1; pointer-events: none;
+    background: linear-gradient(to top, #1c8a3f, #6fe08a);
+    border-radius: 18px 18px 4px 4px;
+    transform-origin: bottom center;
+    animation: dung 4s ease-in-out infinite alternate;
+}
+@keyframes dung {
+    from { transform: rotate(-9deg) skewX(-4deg); }
+    to   { transform: rotate(9deg)  skewX(4deg); }
+}
+.da {
+    position: fixed; bottom: 30px; z-index: 1; pointer-events: none;
+    background: radial-gradient(circle at 35% 30%, #8c97a3, #4a5560);
+    border-radius: 50% 50% 40% 40%;
+}
+#bongBong { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 6; pointer-events: none; }
+.bubble {
+    position: absolute; bottom: -40px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.95), rgba(255,255,255,.25) 55%, rgba(255,255,255,.08));
+    border: 1px solid rgba(255,255,255,.7);
+    animation: noi 8s ease-in forwards;
+}
+@keyframes noi {
+    0%   { transform: translate(0, 0);          opacity: 0; }
+    10%  { opacity: 1; }
+    50%  { transform: translate(25px, -55vh); }
+    100% { transform: translate(-25px, -115vh); opacity: 0; }
+}
+@keyframes no { to { scale: 1.9; opacity: 0; } }
+#diemBox {
+    position: fixed; top: 58px; left: 20px; z-index: 20;
+    padding: 4px 12px; border-radius: 999px;
+    background: rgba(0,0,0,.25); color: #fff; font-size: 14px;
+}
+#bangPhu {
+    position: fixed; top: 62px; right: 20px; z-index: 30;
+    width: 280px; padding: 12px;
+    border-radius: 14px;
+    background: rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,.4);
+    color: #fff; font-size: 13px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+#bangPhu .hang { display: flex; gap: 8px; margin-bottom: 8px; }
+#bangPhu button {
+    flex: 1; padding: 8px 6px; font-size: 14px; font-weight: 600;
+    color: #0a6cb0; background: #fff;
+    border: none; border-radius: 8px; cursor: pointer;
+}
+#bangPhu button:hover { background: #ffd54f; }
+#bangPhu button.bat   { background: #ffb300; color: #fff; }
+#bangPhu label { display: flex; justify-content: space-between; margin-bottom: 2px; }
+#bangPhu input { width: 100%; margin-bottom: 8px; accent-color: #ffb300; cursor: pointer; }
+#tooltip {
+    position: fixed; z-index: 40; display: none;
+    max-width: 230px; padding: 8px 12px;
+    border-radius: 10px; font-size: 13px; line-height: 1.4;
+    background: rgba(0,0,0,.75); color: #fff;
+    pointer-events: none;
+}
+#tooltip b { display: block; color: #ffd54f; font-size: 14px; }
+#thongBao {
+    position: fixed; top: 80px; left: 50%; transform: translateX(-50%);
+    z-index: 40; display: none;
+    padding: 10px 22px; border-radius: 999px;
+    background: rgba(0,0,0,.65); color: #fff; font-size: 15px; font-weight: 600;
+}
+html, body { overscroll-behavior: none; }            /* không bị "kéo giật" trang */
+body {
+    touch-action: manipulation;                      
+    -webkit-user-select: none; user-select: none;    
+    -webkit-touch-callout: none;                     
+    -webkit-text-size-adjust: 100%;                  
+}
+img { -webkit-user-drag: none; }
+#content { cursor: pointer; }                        
+@supports (-webkit-touch-callout: none) {
+    html { height: -webkit-fill-available; }
+    body, #content { height: -webkit-fill-available; }
+}
+@supports (height: 100dvh) {
+    body, #content { height: 100dvh; }             
+#btnBang {
+    display: none;
+    position: fixed; bottom: 12px; right: 12px; z-index: 31;
+    width: 46px; height: 46px; border-radius: 50%;
+    align-items: center; justify-content: center;
+    border: none; cursor: pointer;
+    background: #ffb300; color: #fff; font-size: 22px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+body.moBang #btnBang { background: #fff; color: #0a6cb0; }
+@media (max-width: 700px), (max-height: 500px) {
+    #btnBang { display: flex; }
+    #bangPhu { display: none; }                      
+    body.moBang #bangPhu { display: block; }         
+    #bangPhu { bottom: 68px; }
+}
+@media (max-width: 380px) {
+    h1 { font-size: 17px; }
+    /* Hai nút cũ xuống hàng thứ hai, chia đều chiều ngang */
+    #nut { top: 42px; left: 10px; right: 10px; display: flex; gap: 6px; }
+    #nut button { flex: 1; margin: 0; font-size: 12px; padding: 7px 4px; }
+    #diemBox { top: 92px; }
+    #thongBao { top: 130px; }
+}
+@media (max-width: 700px) {
+    #tiaNang { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    #tiaNang { display: none; }
+    #content img { animation: none; }
+}
+@media (max-width: 480px) {
+    #shark, #faint, #diver1, #diver2, #diver3 { width: 19vw; }
+    #goldfish { width: 15vw; }
+    #turtle   { width: 17vw; }
+}
+html, body { overscroll-behavior: none; }            
+body {
+    touch-action: manipulation;                      
+    -webkit-user-select: none; user-select: none;   
+    -webkit-touch-callout: none;                    
+    -webkit-text-size-adjust: 100%;                  
+}
+img { -webkit-user-drag: none; }
+#content { cursor: pointer; }                        
+@supports (-webkit-touch-callout: none) {
+    html { height: -webkit-fill-available; }
+    body, #content { height: -webkit-fill-available; }
+}
+@supports (height: 100dvh) {
+    body, #content { height: 100dvh; }              
+}
+#btnBang {
+    display: none;
+    position: fixed; bottom: 12px; right: 12px; z-index: 31;
+    width: 46px; height: 46px; border-radius: 50%;
+    align-items: center; justify-content: center;
+    border: none; cursor: pointer;
+    background: #ffb300; color: #fff; font-size: 22px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+body.moBang #btnBang { background: #fff; color: #0a6cb0; }
+@media (max-width: 700px), (max-height: 500px) {
+    #btnBang { display: flex; }
+    #bangPhu { display: none; }                      
+    body.moBang #bangPhu { display: block; }        
+    #bangPhu { bottom: 68px; }
+}
+@media (max-width: 380px) {
+    h1 { font-size: 17px; }
+    #nut { top: 42px; left: 10px; right: 10px; display: flex; gap: 6px; }
+    #nut button { flex: 1; margin: 0; font-size: 12px; padding: 7px 4px; }
+    #diemBox { top: 92px; }
+    #thongBao { top: 130px; }
+}
+@media (max-width: 700px) {
+    #tiaNang { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    #tiaNang { display: none; }
+    #content img { animation: none; }
+}
+@media (max-width: 480px) {
+    #shark, #faint, #diver1, #diver2, #diver3 { width: 19vw; }
+    #goldfish { width: 15vw; }
+    #turtle   { width: 17vw; }
+}
+}
